@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Description de ma page">
+    <title id="titre_page"></title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="bonbin">
+            <img src="https://i54.servimg.com/u/f54/12/59/45/23/cd10.png" class="cd" alt='cd'/>
+            <h1 class="mma">My Music App</h1>
+        </div>
+    </div>
+</header>
+<section>
+    <div class= 'container'>
+        <form class = 'form' >
+            <label>Recherche : </label>
+            <input type="text" placeholder="artiste/titre/album" name="newSearch"  class="research" id="newSearch"/>
+            
+            <label>Catégorie : </label>
+            <select name="type" id="type" class="type">
+                <option value="tout">Tout</option>
+                <option value="artiste">Artiste</option>
+                <option value="titre">Titre</option>
+                <option value="album">Album</option>
+            </select>
+            
+            <button class="sub" id="sub">Go!</button> 
+        </form>
+    </div>
+</section>
+<p id="totalResult" class="tpage"></p>
+<section>
+    <div id="ref" class="container indexation">
+        <p class="nb">#</p>
+        <p class="ar">Artiste</p>
+        <p class="ti">Titre</p>
+        <p class="al">Album</p>
+        <p class="in">Info</p>
+    </div>
+    <div id="resultatCont" class="resultatCont"></div>
+    <div class="modal" id="myModal">
+    </div>
+    <div class="container pagination">
+        <ul class="allPage" id="allPage"></ul>
+    </div>
+
+    <p id="totalpage" class="tpage"></p>
+
+</section>
+<footer>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
